@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="" class="Home">Home</a>
+        <a href="" class="ovqat">Foods</a>
+        <a href="" class="Servislar">Services</a>
+        <a href="https://t.me/ultra_uz_1" class="Ulanish" target="_blank">Connect</a>
+        <button class="login">Kirish</button>
+    </div>
+
+    <div class="rasm">
+        <img src="asd.png" alt="" class="fast">
+        <h2 class="uzbek">Uzbek</h2>
+        <h1 class="foods">Fast Foods</h1>
+        <h5 class="fastt">GAMBURGER,LAVASH,HOT-DOG</h5>
+    </div>
+
+    <div class="retsept reveal">
+        <a href="#" class="gamburger">Gamburger</a>
+        <a href="lavash.html" class="lavash" target="_blank">Lavash</a>
+        <a href="hot.html" class="hot" target="blank">Hot-Dog</a>
+        <a href="firma.html" class="firmalar" target="blank">Firmalar</a>
+    </div>
+
+    <div class="hamburger reveal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQdnpp1DhFXZogbEZQHCJfem_GiFZdQgDegPrQiDu&s"
+            alt="" class="gambur">
+        <h1 class="gamburr">Gamburger</h1>
+        <h3 class="masalliq">Ingredients:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur error temporibus. Ut eius
+            quasi provident sapiente illo quibusdam, blanditiis quo aspernatur mollitia sequi magnam similique illum
+            error nihil, aliquam odio cum architecto necessitatibus voluptates veniam! Soluta consequatur blanditiis
+            maxime consectetur iure alias, fugit maiores nobis nulla eaque illo dolore veniam, nemo sapiente. Nam ipsum
+            enim inventore voluptas quae quas perferendis voluptatibus nostrum dolorum repellat quibusdam, autem itaque
+            quisquam quo laudantium, eum aliquam perspiciatis dignissimos accusantium? Maiores dignissimos id eum
+            laborum voluptatibus quis, nulla odio pariatur, sed adipisci dolor quisquam facere, quod unde voluptate
+            error.</p>
+    </div>
+
+    <div class="lavashh reveal">
+        <img src="https://yukber.uz/image/cache/catalog/kavash-600x600.jpg"
+            alt="" class="lavashr">
+        <h1 class="lavashsh">Lavash</h1>
+        <h3 class="masalliq1">Ingredients:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur error temporibus. Ut eius
+            quasi provident sapiente illo quibusdam, blanditiis quo aspernatur mollitia sequi magnam similique illum
+            error nihil, aliquam odio cum architecto necessitatibus voluptates veniam! Soluta consequatur blanditiis
+            maxime consectetur iure alias, fugit maiores nobis nulla eaque illo dolore veniam, nemo sapiente. Nam ipsum
+            enim inventore voluptas quae quas perferendis voluptatibus nostrum dolorum repellat quibusdam, autem itaque
+            quisquam quo laudantium, eum aliquam perspiciatis dignissimos accusantium? Maiores dignissimos id eum
+            laborum voluptatibus quis, nulla odio pariatur, sed adipisci dolor quisquam facere, quod unde voluptate
+            error.</p>
+    </div>
+
+    <div class="hotdog reveal">
+        <img src="https://static.toiimg.com/thumb/resizemode-4,width-1280,height-720,msid-88333867/88333867.jpg"
+            alt="" class="hotr">
+        <h1 class="hott">Hot-Dog</h1>
+        <h3 class="masalliq2">Ingredients:</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus consequuntur error temporibus. Ut eius
+            quasi provident sapiente illo quibusdam, blanditiis quo aspernatur mollitia sequi magnam similique illum
+            error nihil, aliquam odio cum architecto necessitatibus voluptates veniam! Soluta consequatur blanditiis
+            maxime consectetur iure alias, fugit maiores nobis nulla eaque illo dolore veniam, nemo sapiente. Nam ipsum
+            enim inventore voluptas quae quas perferendis voluptatibus nostrum dolorum repellat quibusdam, autem itaque
+            quisquam quo laudantium, eum aliquam perspiciatis dignissimos accusantium? Maiores dignissimos id eum
+            laborum voluptatibus quis, nulla odio pariatur, sed adipisci dolor quisquam facere, quod unde voluptate
+            error.</p>
+    </div>
+
+    <script type="text/javascript">
+         
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active')
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
